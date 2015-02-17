@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersViewController">
             <connections>
-                <outlet property="businessesTableView" destination="aYC-He-zZ5" id="mcD-vV-Gmi"/>
+                <outlet property="tableView" destination="gOj-v2-Y3M" id="OZ6-Mx-5mL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,24 +15,19 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-Pd-idb">
-                    <rect key="frame" x="137" y="240" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aYC-He-zZ5">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gOj-v2-Y3M">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="aYC-He-zZ5" secondAttribute="trailing" id="B7R-my-X4e"/>
-                <constraint firstItem="aYC-He-zZ5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JCg-Ta-JtD"/>
-                <constraint firstItem="aYC-He-zZ5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="joC-XL-n3P"/>
-                <constraint firstAttribute="bottom" secondItem="aYC-He-zZ5" secondAttribute="bottom" id="wF6-Vw-Ajy"/>
+                <constraint firstItem="gOj-v2-Y3M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0VD-Cq-JNd"/>
+                <constraint firstAttribute="trailing" secondItem="gOj-v2-Y3M" secondAttribute="trailing" id="D5D-qI-CWS"/>
+                <constraint firstItem="gOj-v2-Y3M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RUy-KZ-PNM"/>
+                <constraint firstAttribute="bottom" secondItem="gOj-v2-Y3M" secondAttribute="bottom" id="xOc-E0-TK1"/>
             </constraints>
+            <point key="canvasLocation" x="490" y="353"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

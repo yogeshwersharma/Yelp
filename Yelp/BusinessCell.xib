@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="BusinessCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orE-pd-VpQ">
+                        <rect key="frame" x="8" y="8" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="glr-GD-H5A"/>
+                            <constraint firstAttribute="width" constant="70" id="xHP-no-Yf7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqo-mT-69A">
+                        <rect key="frame" x="270" y="8" width="41.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1. Restaurant Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-f2-CuZ">
+                        <rect key="frame" x="86" y="8" width="153" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="orE-pd-VpQ" secondAttribute="bottom" constant="8" id="2gl-y1-DOc"/>
+                    <constraint firstItem="orE-pd-VpQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7pI-u9-Uvb"/>
+                    <constraint firstAttribute="trailing" secondItem="Gqo-mT-69A" secondAttribute="trailing" constant="8" id="B0I-JK-7YX"/>
+                    <constraint firstItem="orE-pd-VpQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="UfH-ua-8m6"/>
+                    <constraint firstItem="AaF-f2-CuZ" firstAttribute="leading" secondItem="orE-pd-VpQ" secondAttribute="trailing" constant="8" id="VtN-qE-Spw"/>
+                    <constraint firstItem="AaF-f2-CuZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Wc3-Yh-wtD"/>
+                    <constraint firstItem="Gqo-mT-69A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zcd-ME-DGG"/>
+                    <constraint firstItem="Gqo-mT-69A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AaF-f2-CuZ" secondAttribute="trailing" constant="8" id="hGv-TD-iAo"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AaF-f2-CuZ" secondAttribute="bottom" constant="8" id="iaG-zK-GyX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="distanceLabel" destination="Gqo-mT-69A" id="uco-Zj-V9O"/>
+                <outlet property="nameLabel" destination="AaF-f2-CuZ" id="sfV-fX-yRp"/>
+                <outlet property="thumbImage" destination="orE-pd-VpQ" id="AG8-6n-Z9c"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="240.5"/>
+        </tableViewCell>
+    </objects>
+</document>
